@@ -1,0 +1,135 @@
+@use 'fonts';
+@use 'reset';
+
+$white: #fff;
+$black: #000;
+$dark-blue: #2C4058;
+$light-blue: #55B7FF;
+$purple: #7E5AFF ;
+
+%inner-centered{
+  width: 86%;
+  margin: 0 auto;
+}
+
+.main-banner{
+  &__inner{
+    position: relative;
+    @extend %inner-centered;
+    .main-nav{
+      margin-top: 5.3rem;
+      position: absolute;
+      width: 100%;
+      box-sizing: border-box;
+      background: transparent;
+      z-index: 2;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &__list{
+        display: flex;
+        li{
+          margin-left: 7rem;
+          list-style: circle;
+          font-size: 2.0rem;
+          color: white;
+          transition: all 0.3s ease-in-out;
+          &:hover{
+            transform: scale(1.2);
+            font-weight: 700;
+          }
+        }
+        a{
+          font-family: fonts.$sourcesanspro-font;
+          font-size: 1.4rem;
+          color: $white;
+        }
+      }
+      .social-links{
+        display: flex;
+        ul{
+          display: flex;
+        }
+        li{
+          margin-left: 4.7rem;
+        }
+        a{
+          color: $white;
+          font-size: 1.3rem;
+        }
+        i{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 1rem;
+          width: 20px;
+          height: 20px;
+          border: 2px solid rgba(255, 255, 255, 0.5);
+          border-radius: 50%;
+          transition: all 0.3s ease-in-out;
+          &:hover{
+            transform: scale(1.2);
+          }
+        }
+      }
+    }
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 674.5px;
+  i{
+    display: flex;
+    z-index: 3;
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    &:hover{
+      transform: scale(1.2);
+    }
+  }
+}
+
+.swiper-wrapper{
+  .swiper-slide{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h2{
+      font-family: fonts.$montserrat-font;
+      font-size: 8rem;
+      font-weight: 700;
+      line-height: 9.7rem;
+      position: absolute;
+      z-index: 3;
+      color: $white;
+    }
+    p{
+      font-family: fonts.$montserrat-font;
+      font-size: 1.8rem;
+      letter-spacing: 0.29rem;
+      line-height: 2.14rem;
+      position: absolute;
+      bottom: 37%;
+      z-index: 3;
+      color: $white;
+    }
+    &::after{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(to right top, #7e5aff, #5979ff, #3992ff, #37a6ff, #55b7ff);
+      opacity: 0.55;
+    }
+  }
+}
