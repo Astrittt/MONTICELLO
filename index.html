@@ -1,38 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/assets/css/index.css">
-    <link rel="stylesheet"href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-    <link rel="icon" type="image" href="src/assets/img/favicon.png">
-    <title>Monticello</title>
-  </head>
-  <body>
-    <main>
-      <section class="main-banner">
-        <div class="main-banner__inner">
-          <nav class="main-nav">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="src/assets/css/index.css">
+      <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+      <link rel="icon" href="src/assets/img/favicon.png">
+      <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+      <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+      <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+      <title>Monticello</title>
+    </head>
+    <body>
+      <main>
+        <section class="main-banner">
+          <div class="main-banner__inner">
+            <nav class="main-nav">
+              <a href="#">
+                <img src="src/assets/img/Monticello-Logo.svg" alt="Monticello-Logo"/>
+              </a>
+              <ul class="main-nav__list ">
+                <li>
+                  <a href="#" title="About Us" >ABOUT US</a>
+                </li>
+                <li>
+                  <a href="#" title="PROJECT" >PROJECT</a>
+                </li>
+                <li>
+                  <a href="#news" title="NEWS" >NEWS</a>
+              </li>
+              <li>
+                <a href="#contact" title="CONTACT" >CONTACT</a>
+              </li>
+              </ul>
+              <div class="social-links">
+                <ul>
+                  <li>
+                    <a href="#" title="Facebook" >
+                      <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" title="Twitter" >
+                      <i class="fa-brands fa-twitter"></i>
+                    </a>
+                  </li>
+                <li>
+                    <a href="#" title="Instagram" >
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+          </nav>
+        </div>
+        <div class="swiper mySwiper">
+          <a href="#gallery" title="Swipe Down">
+            <i class="fa-solid fa-chevron-down"></i>
+          </a>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <h2>SIMPLE & MODERN</h2>
+              <p>WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
+              <img src="src/assets/img/swiperpic1.jpg" alt="Building"/>
+            </div>
+            <div class="swiper-slide">
+              <h2>SIMPLE & MODERN</h2>
+              <p>WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
+              <img src="src/assets/img/swiperpic2.jpg" alt="Building"/>
+            </div>
+            <div class="swiper-slide">
+              <h2>SIMPLE & MODERN</h2>
+              <p>WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
+              <img src="src/assets/img/swiperpic3.jpg" alt="Building"/>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <section class="about-left">
+        <h2>WHAT WE DO</h2>
+        <div class="about-left__inner">
+          <div class="about-left__inner--img">
+            <div class="bg-img-left">
+              <img src="src/assets/img/gradient1bg.svg" alt="Gradient Background"/>
+            </div>
+            <div class="front-img-left">
+              <img src="src/assets/img/about-uspic1.jpg" alt="About Us Picture"/>
+            </div>
+          </div>
+          <div class="about-left__inner--txt">
+            <h3>ONE WORLD</h3>
+            <h4>TRADE CENTER</h4>
+            <p>Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our thoughts are very powerful.</p>
+            <a class="more-details" href="#" >MORE DETAILS</a>
+            <span>
+              <i class="fa-solid fa-location-dot"></i>
+              New York City, United States - 1776 feet</span>
+          </div>
+        </div>
+      </section>
+      <section class="about-right">
+        <div class="about-right__inner">
+          <div class="about-right__inner--img">
+            <div class="bg-img-right">
+              <img src="src/assets/img/right-partbg.svg" alt="Gradient Background"/>
+            </div>
+            <div class="front-img-right">
+              <img src="src/assets/img/rightpartfront.svg" alt="Building"/>
+            </div>
+          </div>
+          <div class="about-right__inner--txt">
+            <h3>ONE WORLD</h3>
+            <h4>TRADE CENTER</h4>
+            <p>Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our thoughts are very powerful.</p>
+            <a class="more-details" href="#">MORE DETAILS</a>
+            <span>
+              <i class="fa-solid fa-location-dot"></i>
+              New York City, United States - 1776 feet</span>
+          </div>
+        </div>
+      </section>
+      <section id="news" class="news">
+        <h2>LATEST NEWS</h2>
+        <span class="prev-arrow"><i class="fa-solid fa-angle-left"></i></span>
+        <div class="news__inner">
+          <div class="news__inner--cards">
+            <div class="news__inner--txt">
+              <img src="src/assets/img/sliderimg1.jpg" alt="Slider Pics">
+              <h3>SEE THE UNMATCHED BEAUTY OF THE GREAT.</h3>
+              <p>Free directories: directories are perfect for customers that are searching for...</p>
+            </div>
+            <div class="names">
+              <img src="src/assets/img/profilepic1.png" alt="Pofile Picture"/>
+              <div class="names__txt">
+                <h4>AJA BRUN</h4>
+                <span> 20 JAN 2020</span>
+              </div>
+            </div>
+          </div>
+          <div class="news__inner--cards">
+            <div class="news__inner--txt">
+              <img src="src/assets/img/sliderpic2.jpg" alt="Slider Pics">
+              <h3>EFFECTIVE ADVERTISING POINTERS.</h3>
+              <p>Having a home based business is a wonderful asset to your life...</p>
+            </div>
+            <div class="names">
+              <img src="src/assets/img/profilepic2.png"  alt="Pofile Picture"/>
+              <div class="names__txt">
+                <h4>AJA BRUN</h4>
+                <span> 20 JAN 2020</span>
+              </div>
+            </div>
+          </div>
+          <div class="news__inner--cards">
+            <div class="news__inner--txt">
+              <img src="src/assets/img/sliderpic3.png" alt="Slider Pics">
+              <h3>HYPNOTIZE YOURSELF INTO THE GHOST.</h3>
+              <p>There are many things that are important to catalog design...</p>
+            </div>
+            <div class="names">
+              <img src="src/assets/img/profilepic3.png" alt="Pofile Picture" />
+              <div class="names__txt">
+                <h4>AJA BRUN</h4>
+                <span> 20 JAN 2020</span>
+              </div>
+            </div>
+          </div>
+          <div class="news__inner--cards">
+            <div class="news__inner--txt">
+              <img src="src/assets/img/sliderimg1.jpg" alt="Slider Pics">
+              <h3>SEE THE UNMATCHED BEAUTY OF THE GREAT.</h3>
+              <p>Free directories: directories are perfect for customers that are searching for...</p>
+            </div>
+            <div class="names">
+              <img src="src/assets/img/profilepic1.png" alt="Pofile Picture"/>
+              <div class="names__txt">
+                <h4>AJA BRUN</h4>
+                <span> 20 JAN 2020</span>
+              </div>
+            </div>
+          </div>
+          <div class="news__inner--cards">
+            <div class="news__inner--txt">
+              <img src="src/assets/img/sliderpic2.jpg" alt="Slider Pics">
+              <h3>EFFECTIVE ADVERTISING POINTERS.</h3>
+              <p>Having a home based business is a wonderful asset to your life...</p>
+            </div>
+            <div class="names">
+              <img src="src/assets/img/profilepic2.png" alt="Pofile Picture"/>
+              <div class="names__txt">
+                <h4>AJA BRUN</h4>
+                <span> 20 JAN 2020</span>
+              </div>
+            </div>
+          </div>
+          <div class="news__inner--cards">
+            <div class="news__inner--txt">
+              <img src="src/assets/img/sliderpic3.png" alt="Slider Pics">
+              <h3>HYPNOTIZE YOURSELF INTO THE GHOST.</h3>
+              <p>There are many things that are important to catalog design...</p>
+            </div>
+            <div class="names">
+              <img src="src/assets/img/profilepic3.png" alt="Pofile Picture"/>
+              <div class="names__txt">
+                <h4>AJA BRUN</h4>
+                <span> 20 JAN 2020</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <span class="next-arrow"><i class="fa-solid fa-angle-right"></i></span>
+      </section>
+      <section id="gallery" class="gallery">
+        <h4>GALLERY</h4>
+        <div class="gallery__inner">
+          <div class="gallery__inner--grid-container">
+            <div class="grid-element first">
+              <img src="src/assets/img/gridpic1.jpg" alt="Cat" class="pic">
+            </div>
+            <div class="grid-element second">
+              <img src="src/assets/img/gridpic2.jpg" alt="Cat" class="pic">
+            </div>
+            <div class="grid-element third">
+              <img src="src/assets/img/gridpic3.jpg" alt="Cat" class="pic">
+            </div>
+            <div class="grid-element fourth">
+              <img src="src/assets/img/gridpic4.jpg" alt="Cat" class="pic">
+            </div>
+            <div class="grid-element fifth">
+              <img src="src/assets/img/gridpic5.jpg" alt="Cat" class="pic">
+            </div>
+          </div>
+          <button type="button" class="btn"> SEE MORE</button>
+        </div>
+      </section>
+      <section class="map-section">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d733.5630181208445!2d21.16486064765781!3d42.65601341052201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1653177649072!5m2!1sen!2s" width="1349" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+        <div class="map-section__inner">
+          <h3>GET IN TOUCH</h3>
+          <div class="map-section__inner__card">
+            <div class="map-section__inner__card--text">
+              <p class="location"><i class="fa-solid fa-location-dot"></i> 91 Nolan Extensions Suite 670</p>
+              <p class="phone"><i class="fa-solid fa-phone"></i>+001 356-868-2454</p>
+              <p class="message"><i class="fa-solid fa-inbox"></i>montichello@service.com</p>
+              <p class="clock"><i class="fa-solid fa-clock"></i>From 07:05AM to 19:30PM</p>
+            </div>
+            <div id="contact" class="map-section__inner__card--form">
+              <form class="map-section__form">
+                <div class="map-section__form--row">
+                  <input type="text" placeholder="Your Name..."/>
+                </div>
+                <div class="map-section__form--row">
+                  <input type="email" placeholder="Your E-Mail..."/>
+                </div>
+                <button type="submit" class="btn"> SUBMIT</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer__inner">
+          <div class="footer__inner--copyright">
             <a href="#">
               <img src="src/assets/img/Monticello-Logo.svg" alt="Monticello-Logo"/>
             </a>
-            <ul class="main-nav__list ">
+            <span>Copyrights © 2020 Montichello</span>
+          </div>
+          <div class="footer__inner--social-links">
+            <ul>
               <li>
-                <a href="#" title="About Us" >ABOUT US</a>
-              </li>
-              <li>
-                <a href="#" title="PROJECT" >PROJECT</a>
-              </li>
-              <li>
-                <a href="#" title="NEWS" >NEWS</a>
-            </li>
-            <li>
-              <a href="#" title="CONTACT" >CONTACT</a>
-            </li>
-            </ul>
-            <div class="social-links">
-              <ul>
                 <a href="#" title="Facebook" >
                   <i class="fa-brands fa-facebook-f"></i>
                 </a>
@@ -42,43 +281,22 @@
                   <i class="fa-brands fa-twitter"></i>
                 </a>
               </li>
-              <li>
+            <li>
                 <a href="#" title="Instagram" >
                   <i class="fa-brands fa-instagram"></i>
                 </a>
               </li>
-
-              </ul>
-            </div>
-        </nav>
-      </div>
-      <div class="swiper mySwiper">
-        <a href="#" title="Swipe Down">
-          <i class="fa-solid fa-chevron-down"></i>
-        </a>
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <h2>SIMPLE & MODERN</h2>
-            <p>WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
-            <img src="src/assets/img/swiperpic1.jpg"/>
-          </div>
-          <div class="swiper-slide">
-            <h2>SIMPLE & MODERN</h2>
-            <p>WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
-            <img src="src/assets/img/swiperpic2.jpg"/>
-          </div>
-          <div class="swiper-slide">
-            <h2>SIMPLE & MODERN</h2>
-            <p>WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
-            <img src="src/assets/img/swiperpic3.jpg"/>
+            </ul>
           </div>
         </div>
-        <div class="swiper-pagination"></div>
-      </div>
-    </section>
-  </main>
-  <script src="https://kit.fontawesome.com/8781dd0194.js" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="src/assets/js/script.js"></script>
-</body>
+      </footer>
+    </main>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://kit.fontawesome.com/8781dd0194.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="src/assets/js/script.js"></script>
+  </body>
 </html>

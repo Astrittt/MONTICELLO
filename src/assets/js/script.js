@@ -7,12 +7,17 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-// let listContainer = document.getElementsByClassName('main-nav__list')
-// let lists = listContainer.getElementsByClassName('active')
-// for (var i = 0; i < lists.length; i++) {
-//   lists[i].addEventListener("click", function() {
-//     let current = document.getElementsByClassName("active");
-//     current[0].className = current[0].className.replace(" active", "");
-//     this.className += " active";
-//   });
-// }
+$(document).ready(function () {
+  $('.news__inner').slick({
+    autoplay: false,
+    // autoplay: {
+    //   delay: 4000,
+    //   disableOnInteraction: false,
+    // },
+    infinite: true,
+    slidesToShow: 3,
+    arrows:true,
+    prevArrow: '.prev-arrow',
+    nextArrow: '.next-arrow',
+  });
+});
